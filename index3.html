@@ -1,0 +1,135 @@
+<head>
+    <style>
+        td, tr, table, th {
+            border: 1px solid #777777;
+        }
+        tr {
+            background: lightgray;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+        }
+        p>a {
+            font-size: .8rem;
+            text-decoration: none;
+            color: #777777;
+        }
+        input[type=submit] {
+            width: 6vw;
+        }
+        .form__rmb {
+            display: flex;
+            justify-content: space-between;
+        }
+        .rmb__btn {
+            margin-top: 1rem;
+            font-size: .8rem;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>15</td>
+            <td>15</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>60</td>
+            <td>45</td>
+        </tr>
+    </table>
+    <table cellpadding="5">
+        <tr>
+            <td></td>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <th>Tickets sold:</th>
+            <td>120</td>
+            <td>135</td>
+        </tr>
+    </table>
+    <table cellpadding="16" cellspacing="8">
+        <tr bgcolor="#f9f9f9">
+            <th></th>
+            <th>Withdrawn</th>
+            <th>Credit</th>
+            <th>Balance</th>
+        </tr>
+        <tr bgcolor="#f9f9f9">
+            <th>January</th>
+            <td>250.00</td>
+            <td>660.50</td>
+            <td>410.50</td>
+        </tr>
+        <tr bgcolor="#f9f9f9">
+            <th>Febrary</th>
+            <td>135.55</td>
+            <td>895.20</td>
+            <td>1170.15</td>
+        </tr>
+    </table>
+    <table class="table" cellpadding="10">
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Art</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+        </tr>
+    </table>
+
+    <form action="">
+        <label for="username">Username: </label>
+        <input type="text" placeholder="Username" id="username" name="username"/>
+        <label for="password">Password: </label>
+        <input type="password" name="password" placeholder="Password" id="password"/>
+        <div class="form__rmb">
+            <label class="rmb__btn"><input type="checkbox" name="remember"/> Remember</label>
+            <p><a href="#">Forgot password?</a></p>
+        </div>
+        <input type="submit" name="submit" class="submit__btn"/>
+    </form>
+</body>
+
+
